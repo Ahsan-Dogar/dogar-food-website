@@ -25,17 +25,17 @@ const menuItems = [
   },
   {
     id: 4,
+    name: 'Fish & Chips',
+    description: 'Golden crispy battered fish fillets served with thick-cut chips and homemade tartar sauce',
+    price: '₨750',
+    image: 'https://images.unsplash.com/photo-1579208030886-b937da9925dc?q=80&w=1935&auto=format&fit=crop'
+  },
+  {
+    id: 5,
     name: 'Grilled Steak',
     description: 'Premium cut steak grilled to perfection, served with mashed potatoes',
     price: '₨1200',
     image: 'https://images.unsplash.com/photo-1558030006-450675393462?q=80&w=1931&auto=format&fit=crop'
-  },
-  {
-    id: 5,
-    name: 'Fish & Chips',
-    description: 'Crispy battered fish with golden fries and tartar sauce',
-    price: '₨750',
-    image: 'https://images.unsplash.com/photo-1579208030886-b937da9925dc?q=80&w=1935&auto=format&fit=crop'
   },
   {
     id: 6,

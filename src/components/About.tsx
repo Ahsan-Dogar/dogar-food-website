@@ -17,7 +17,7 @@ const About = () => {
                 className="rounded-lg shadow-xl w-full h-auto"
               />
               <div className="absolute -bottom-8 -right-8 bg-white p-4 rounded-lg shadow-lg hidden md:block">
-                <p className="text-primary font-playfair text-xl">Serving Since 2010</p>
+                <p className="text-primary font-playfair text-xl">Serving Since 2024</p>
               </div>
             </div>
           </div>
