@@ -1,5 +1,7 @@
 
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import { Button } from '@/components/ui/button';
 
 const menuItems = [
   {
@@ -46,12 +48,31 @@ const menuItems = [
   },
 ];
 
-const Menu = () => {
+interface MenuProps {
+  standalone?: boolean;
+  onOrderClick?: (itemId: number) => void;
+}
+
+const Menu = ({ standalone = false, onOrderClick }: MenuProps) => {
+  const navigate = useNavigate();
+  
+  const handleOrderClick = (itemId: number) => {
+    if (onOrderClick) {
+      onOrderClick(itemId);
+    } else {
+      navigate(`/food/${itemId}`);
+    }
+  };
+  
   return (
-    <section id="menu" className="py-20">
-      <div className="container-custom">
-        <h2 className="section-title reveal">Our Menu</h2>
-        <p className="section-subtitle reveal delay-200">Discover our delicious offerings</p>
+    <section id="menu" className={standalone ? '' : 'py-20'}>
+      <div className={standalone ? '' : 'container-custom'}>
+        {!standalone && (
+          <>
+            <h2 className="section-title reveal">Our Menu</h2>
+            <p className="section-subtitle reveal delay-200">Discover our delicious offerings</p>
+          </>
+        )}
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {menuItems.map((item, index) => (
@@ -68,18 +89,24 @@ const Menu = () => {
               <p className="menu-description">{item.description}</p>
               <div className="flex justify-between items-center">
                 <span className="menu-price">{item.price}</span>
-                <button className="px-4 py-2 bg-accent text-accent-foreground rounded-full text-sm font-medium hover:bg-accent/90 transition-colors">
+                <Button 
+                  onClick={() => handleOrderClick(item.id)}
+                  className="px-4 py-2 bg-accent text-accent-foreground rounded-full text-sm font-medium hover:bg-accent/90 transition-colors"
+                >
                   Order Now
-                </button>
+                </Button>
               </div>
             </div>
           ))}
         </div>
         
         <div className="mt-12 text-center reveal">
-          <a href="#" className="btn-primary">
+          <Button 
+            onClick={() => navigate('/menu')}
+            className="btn-primary"
+          >
             View Full Menu
-          </a>
+          </Button>
         </div>
       </div>
     </section>
