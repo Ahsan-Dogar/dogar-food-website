@@ -25,10 +25,10 @@ const menuItems = [
   },
   {
     id: 4,
-    name: 'Fish & Chips',
-    description: 'Golden crispy battered fish fillets served with thick-cut chips and homemade tartar sauce',
-    price: '₨750',
-    image: 'https://images.unsplash.com/photo-1579208030886-b937da9925dc?q=80&w=1935&auto=format&fit=crop'
+    name: 'Crispy Chips',
+    description: 'Golden crispy thick-cut chips seasoned with our special blend of herbs and spices',
+    price: '₨250',
+    image: 'https://images.unsplash.com/photo-1541783245831-57d6fb0926d3?q=80&w=1974&auto=format&fit=crop'
   },
   {
     id: 5,
