@@ -1,8 +1,19 @@
 
 import React from 'react';
 import { Phone, Mail, MapPin } from 'lucide-react';
+import { useToast } from '@/hooks/use-toast';
 
 const Contact = () => {
+  const { toast } = useToast();
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    toast({
+      title: "Message Sent!",
+      description: "We've received your message and will get back to you soon.",
+    });
+  };
+
   return (
     <section id="contact" className="py-20">
       <div className="container-custom">
@@ -67,7 +78,7 @@ const Contact = () => {
             <div className="bg-white p-8 rounded-lg shadow-lg">
               <h3 className="text-2xl font-bold mb-6 font-playfair">Send a Message</h3>
               
-              <form>
+              <form onSubmit={handleSubmit}>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-foreground/70 mb-1">
@@ -78,6 +89,7 @@ const Contact = () => {
                       id="name" 
                       className="w-full px-4 py-2 border border-border rounded-md focus:ring-2 focus:ring-primary/50 focus:outline-none transition-all"
                       placeholder="Your name"
+                      required
                     />
                   </div>
                   <div>
@@ -89,6 +101,7 @@ const Contact = () => {
                       id="email" 
                       className="w-full px-4 py-2 border border-border rounded-md focus:ring-2 focus:ring-primary/50 focus:outline-none transition-all"
                       placeholder="Your email"
+                      required
                     />
                   </div>
                 </div>
@@ -102,6 +115,7 @@ const Contact = () => {
                     id="subject" 
                     className="w-full px-4 py-2 border border-border rounded-md focus:ring-2 focus:ring-primary/50 focus:outline-none transition-all"
                     placeholder="Subject"
+                    required
                   />
                 </div>
                 
@@ -114,6 +128,7 @@ const Contact = () => {
                     rows={5}
                     className="w-full px-4 py-2 border border-border rounded-md focus:ring-2 focus:ring-primary/50 focus:outline-none transition-all resize-none"
                     placeholder="Your message"
+                    required
                   ></textarea>
                 </div>
                 

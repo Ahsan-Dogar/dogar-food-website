@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Facebook, Instagram, Twitter } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -33,13 +34,13 @@ const Footer = () => {
             <h3 className="text-xl font-bold mb-4 text-white font-playfair">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#home" className="text-white/70 hover:text-white transition-colors">Home</a>
+                <Link to="/" className="text-white/70 hover:text-white transition-colors">Home</Link>
               </li>
               <li>
                 <a href="#about" className="text-white/70 hover:text-white transition-colors">About Us</a>
               </li>
               <li>
-                <a href="#menu" className="text-white/70 hover:text-white transition-colors">Menu</a>
+                <Link to="/menu" className="text-white/70 hover:text-white transition-colors">Menu</Link>
               </li>
               <li>
                 <a href="#gallery" className="text-white/70 hover:text-white transition-colors">Gallery</a>

@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Phone, Mail } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -32,17 +33,17 @@ const Navbar = () => {
       <div className="container-custom">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <a href="#" className="text-2xl font-bold text-primary font-playfair">
+          <Link to="/" className="text-2xl font-bold text-primary font-playfair">
             Dogar Food
-          </a>
+          </Link>
 
           {/* Quick contact on desktop */}
           <div className="hidden md:flex items-center space-x-6">
-            <a href="tel:03091489487" className="flex items-center text-sm">
+            <a href="tel:03091489487" className="flex items-center text-sm hover:text-primary transition-colors">
               <Phone size={16} className="mr-2 text-primary" />
               <span>03091489487</span>
             </a>
-            <a href="mailto:dogarahsan160@gmail.com" className="flex items-center text-sm">
+            <a href="mailto:dogarahsan160@gmail.com" className="flex items-center text-sm hover:text-primary transition-colors">
               <Mail size={16} className="mr-2 text-primary" />
               <span>dogarahsan160@gmail.com</span>
             </a>
@@ -50,15 +51,15 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#home" className="text-foreground hover:text-primary transition-colors">
+            <Link to="/" className="text-foreground hover:text-primary transition-colors">
               Home
-            </a>
+            </Link>
             <a href="#about" className="text-foreground hover:text-primary transition-colors">
               About
             </a>
-            <a href="#menu" className="text-foreground hover:text-primary transition-colors">
+            <Link to="/menu" className="text-foreground hover:text-primary transition-colors">
               Menu
-            </a>
+            </Link>
             <a href="#gallery" className="text-foreground hover:text-primary transition-colors">
               Gallery
             </a>
@@ -83,13 +84,13 @@ const Navbar = () => {
         <div className="md:hidden bg-white">
           <div className="container-custom py-4">
             <nav className="flex flex-col space-y-4">
-              <a 
-                href="#home" 
+              <Link 
+                to="/" 
                 className="text-foreground hover:text-primary transition-colors py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Home
-              </a>
+              </Link>
               <a 
                 href="#about" 
                 className="text-foreground hover:text-primary transition-colors py-2"
@@ -97,13 +98,13 @@ const Navbar = () => {
               >
                 About
               </a>
-              <a 
-                href="#menu" 
+              <Link 
+                to="/menu" 
                 className="text-foreground hover:text-primary transition-colors py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Menu
-              </a>
+              </Link>
               <a 
                 href="#gallery" 
                 className="text-foreground hover:text-primary transition-colors py-2"
@@ -123,16 +124,16 @@ const Navbar = () => {
               <div className="pt-4 border-t border-gray-100 mt-2">
                 <a 
                   href="tel:03091489487" 
-                  className="flex items-center py-2 text-sm"
-                  onClick={() => setIsMenuOpen(false)}
+                  className="flex items-center py-2 text-sm hover:text-primary transition-colors"
+                  onClick={(e) => e.stopPropagation()}
                 >
                   <Phone size={16} className="mr-2 text-primary" />
                   <span>03091489487</span>
                 </a>
                 <a 
                   href="mailto:dogarahsan160@gmail.com" 
-                  className="flex items-center py-2 text-sm"
-                  onClick={() => setIsMenuOpen(false)}
+                  className="flex items-center py-2 text-sm hover:text-primary transition-colors"
+                  onClick={(e) => e.stopPropagation()}
                 >
                   <Mail size={16} className="mr-2 text-primary" />
                   <span>dogarahsan160@gmail.com</span>
