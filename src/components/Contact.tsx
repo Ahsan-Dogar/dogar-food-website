@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Phone, Mail, MapPin, Clock } from 'lucide-react';
+import { Phone, Mail, MapPin } from 'lucide-react';
 
 const Contact = () => {
   return (
@@ -57,26 +57,6 @@ const Contact = () => {
                   <address className="not-italic text-foreground mt-1">
                     123 Main Street, City Name
                   </address>
-                </div>
-              </div>
-              
-              <div className="flex items-start">
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-1">
-                  <Clock size={20} className="text-primary" />
-                </div>
-                <div className="ml-4">
-                  <h4 className="text-lg font-semibold mb-1">Opening Hours</h4>
-                  <p className="text-foreground/70">We are open</p>
-                  <div className="mt-1 space-y-1">
-                    <p className="flex justify-between max-w-xs">
-                      <span>Monday - Friday:</span>
-                      <span>9:00 AM - 10:00 PM</span>
-                    </p>
-                    <p className="flex justify-between max-w-xs">
-                      <span>Saturday - Sunday:</span>
-                      <span>10:00 AM - 11:00 PM</span>
-                    </p>
-                  </div>
                 </div>
               </div>
             </div>

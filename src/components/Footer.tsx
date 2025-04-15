@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer className="bg-foreground text-foreground-foreground pt-16 pb-8">
       <div className="container-custom">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
           {/* About */}
           <div>
             <h3 className="text-xl font-bold mb-4 text-white font-playfair">Dogar Food</h3>
@@ -73,21 +73,6 @@ const Footer = () => {
                   <circle cx="12" cy="10" r="3"></circle>
                 </svg>
                 <span className="text-white/70">123 Main Street, City Name</span>
-              </li>
-            </ul>
-          </div>
-          
-          {/* Opening Hours */}
-          <div>
-            <h3 className="text-xl font-bold mb-4 text-white font-playfair">Opening Hours</h3>
-            <ul className="space-y-2">
-              <li className="flex justify-between text-white/70">
-                <span>Monday - Friday:</span>
-                <span>9:00 AM - 10:00 PM</span>
-              </li>
-              <li className="flex justify-between text-white/70">
-                <span>Saturday - Sunday:</span>
-                <span>10:00 AM - 11:00 PM</span>
               </li>
             </ul>
           </div>
