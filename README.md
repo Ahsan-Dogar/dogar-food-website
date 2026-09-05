@@ -1,73 +1,89 @@
-# Welcome to your Lovable project
+<div align="center">
 
-## Project info
+# 🍽️ Dogar Food | Restaurant Website
 
-**URL**: https://lovable.dev/projects/ba5b644b-d56f-429c-ad1f-2554838b3309
+### A modern, delicious restaurant & food ordering experience
 
-## How can I edit this code?
+A sleek food delivery website built with **React**, **Vite**, **Tailwind CSS** and **shadcn/ui** — featuring a hero, interactive menu with food detail pages, gallery, about, contact, and a full order-confirmation flow.
 
-There are several ways of editing your application.
+[![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white)]()
+[![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)]()
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)]()
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white)]()
+[![shadcn/ui](https://img.shields.io/badge/shadcn%2Fui-000000?logo=shadcnui&logoColor=white)]()
 
-**Use Lovable**
+</div>
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/ba5b644b-d56f-429c-ad1f-2554838b3309) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## ✨ Features
 
-**Use your preferred IDE**
+- 🍕 **Rich landing page** — Hero, Menu, Gallery, About & Contact sections
+- 🍟 **Detailed food pages** — dedicated view for every dish via `/food/:id`
+- 📖 **Full menu page** — browse the complete catalog at `/menu`
+- ✅ **Order confirmation** — polished checkout-complete flow
+- 🛍️ **Modern UI kit** — shadcn/ui components (accordion, dialog, cards, toasts & more)
+- 🎨 **Beautiful styling** — Tailwind CSS with a warm, appetizing design
+- 📱 **Fully responsive** — great on mobile & desktop
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🛠️ Tech Stack
 
-Follow these steps:
+| Technology | Purpose |
+| ---------- | ------- |
+| **React 19** + **TypeScript** | Typed UI |
+| **Vite** | Fast builds & HMR |
+| **Tailwind CSS** | Utility-first styling |
+| **shadcn/ui** | Accessible, polished components |
+| **React Router** | Page routing |
+| **React Query** | Server-state management |
+| **Recharts** | Data visualization |
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 🚀 Quick Start
 
-# Step 3: Install the necessary dependencies.
-npm i
+**Prerequisites:** Node.js 18+
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```bash
+# 1. Clone the repository
+git clone https://github.com/Ahsan-Dogar/dogar-food-website.git
+
+# 2. Install dependencies
+cd dogar-food-website
+npm install
+
+# 3. Run the dev server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Open the local URL printed in the terminal.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+## 📂 Project Structure
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```
+src/
+├── components/       # Reusable UI + feature components
+│   └── ui/           # shadcn/ui components
+├── pages/            # Index, Menu, FoodDetail, OrderConfirmation, NotFound
+└── lib/              # Utilities
+```
 
-## What technologies are used for this project?
+---
 
-This project is built with:
+## 🤝 Contributing
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Ideas or improvements? Open an [issue](https://github.com/Ahsan-Dogar/dogar-food-website/issues) or submit a PR.
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/ba5b644b-d56f-429c-ad1f-2554838b3309) and click on Share -> Publish.
+<div align="center">
 
-## Can I connect a custom domain to my Lovable project?
+⭐ **Enjoyed it? Please star the repo!**
 
-Yes it is!
+Made with ❤️ by [Ahsan Dogar](https://github.com/Ahsan-Dogar)
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+</div>
