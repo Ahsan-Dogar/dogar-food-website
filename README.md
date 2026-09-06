@@ -6,6 +6,8 @@
 
 A sleek food delivery website built with **React**, **Vite**, **Tailwind CSS** and **shadcn/ui** — featuring a hero, interactive menu with food detail pages, gallery, about, contact, and a full order-confirmation flow.
 
+[![View Live Demo](https://img.shields.io/badge/🚀-View_Live_Demo-00C853?style=flat-square)](https://ahsan-dogar.github.io/dogar-food-website/)
+
 [![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white)]()
 [![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)]()
 [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)]()
